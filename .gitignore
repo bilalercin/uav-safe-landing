@@ -1,0 +1,38 @@
+# Data
+modified_uavid_dataset/train_data/
+modified_uavid_dataset/val_data/
+modified_uavid_dataset/test_data/
+modified_uavid_dataset/pred_check_person/
+
+# Model Weights
+**/*.pt
+
+# Inference Outputs
+pred_safe/
+visdrone_runs/pred_val_check/
+
+# Training Logs and Artifacts
+**/*.csv
+**/*.png
+**/*.jpg
+**/*.json
+# Aşağıdaki satır, özellikle eğitim ve model çıktı dizinlerindeki YAML dosyalarını dışlamak için düşünülmelidir.
+# Ancak şu anda proje kökündeki 'safe-landing.yaml' gibi önemli dosyaların göz ardı edilmemesi için yorum satırı olarak bırakılmıştır.
+# Örneğin, sadece çıktı dizinlerindeki YAML dosyalarını dışlamak için:
+# modified_uavid_dataset/safe_landing_ft_person_coco/*.yaml
+# modified_uavid_dataset/safe_landing_ft_person_water/*.yaml
+# modified_uavid_dataset/safe_landing_runs_new2/*.yaml
+
+# Python
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+*.pyd
+*.so
+
+# Environment
+.env
+
+# OS & IDE
+.DS_Store
+.idea/

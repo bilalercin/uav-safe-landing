@@ -1,0 +1,8 @@
+ultralytics==8.3.177
+opencv-python
+numpy
+tqdm
+shapely
+albumentations
+matplotlib
+pycocotools
