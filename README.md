@@ -131,28 +131,14 @@ Road prohibition (experimental): Road detection / lane cues from image will be a
 
 VisDrone (optional): A separate YOLOv8-Detect model was prepared for vehicle/pedestrian detection (integration trials were performed).
 
-## 7) Folder Structure (suggested)
-```
-repo/
- ├─ src/
- │   └─ infer_safe.py
- ├─ datasets/
- │   └─ safe-landing/
- │       ├─ images/{train,val}
- │       └─ labels/{train,val}
- ├─ runs/  # training outputs
- ├─ requirements.txt
- └─ README.md
-```
-
-## 8) Troubleshooting
+## Troubleshooting
 `r=65533` appears too often → Do not decrease `--conf`; check water/sky masking, increase `--obstacle-dilation-kernel-size`.
 
 Water/sky mix-up → Turn off `--sky` and compare; use second model (`--weights2`) for water.
 
 Safe areas within roads → Static (OSM) or lane-based road masking will be added in the next phase.
 
-## 9) License and Attributions
+## License and Attributions
 Datasets: UAVID, COCO, Roboflow (Water). Please adhere to relevant licenses and attributions.
 
 Model and code skeleton: Ultralytics YOLOv8.
